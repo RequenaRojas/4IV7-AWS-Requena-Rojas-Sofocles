@@ -1,40 +1,38 @@
 :root{
-    --body-bg-color: #1a1c1a;
-    --text-color: #aaaebc;
-    --hr--color:#2629ac;
+    --body-bg-color: #209bb1;
+    --text-color: #eb5c0a;
+    --hr--color:#c505ff;
     --red:#e74c3c;
 }
 
 *{
     margin: 0;
     padding: 0;
-
 }
 ul{
-    color: inherit;
-    text-decoration: none;
-
+    list-style: none;
 }
+
 a{
     color: inherit;
     text-decoration: none;
-
 }
+
 body{
     margin: 30px 0;
     font: 22px sans-serif;
     background-color: var(--body-bg-color);
     color:var(--text-color);
 }
-
+hr{
+    border-color: var(--hr--color);
+    margin: 20px 0;
+}
 .menu{
     display: flex;
     justify-content: center;
 }
-hr{
-    border-color: var(--hr--color);
-    margin: 20px;
-}
+
 .menu li{
     margin-right: 70px;
 }
@@ -51,6 +49,8 @@ hr{
     display: inline-block;
     padding: 10px;
 }
+
+
 .menu a span:last-child{
     position: absolute;
     top: 0;
@@ -71,8 +71,8 @@ hr{
     transform: translateY(100%);
 }
 
-.menu a:hover span:first-child,
-.menu [data-animation] a:hover span:last-child{
+.menu a:hover span:last-child,
+.menu[data-animation] a:hover span:last-child{
     transform: none;
 }
 
@@ -84,6 +84,8 @@ hr{
     transform: translateY(-100%);
 }
 
+
+
 .menu[data-animation="to-right"] a span:last-child{
     transform: translateX(-100%);
 }
@@ -91,6 +93,7 @@ hr{
 .menu[data-animation="to-right"] a:hover span:first-child{
     transform: translateX(100%);
 }
+
 
 .menu[data-animation="to-left"] a span:last-child{
     transform: translateX(100%);
