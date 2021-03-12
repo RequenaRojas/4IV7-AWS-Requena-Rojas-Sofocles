@@ -1,11 +1,14 @@
 table{
-    margin-top: 50px;
-    caption-side: bottom;
+    margin-top: auto;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;  
+    border-collapse: solid collapse;
 }
 
 td, th{
-    border: 3px;
-    border-color: cyan;
+    size: auto;
+    border: solid 3px;
+    
+    border-color: solid black;
+    
 }
