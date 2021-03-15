@@ -1,14 +1,84 @@
-table{
-    margin-top: auto;
-    margin-left: auto;
-    margin-right: auto;  
-    border-collapse: solid collapse;
+:root{
+    --prymary-color: #20b18d;
+    --second-color: #eb0a68;
+    --hr--color:#0f7c27;
+    --red:#6b5b01;
+}
+@keyframes animation-test{
+    from{
+        background-color: var(--prymary-color);
+    }
+    to{
+        background-color: var(--second-color);
+    }
 }
 
-td, th{
-    size: auto;
-    border: solid 3px;
-    
-    border-color: solid black;
-    
+@keyframes color-font{
+    from{
+        color: var(--red) ;
+    }
+    to{
+        color: var(--hr--color) ;
+    }
 }
+
+@keyframes giroPro{
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes espacio{
+    from{
+        transform: translate(2px,2px);
+    }to{
+        transform: translate(-2px,-2px);
+
+}}
+*{
+    animation-name: animation-test;
+    animation-duration: 100s;
+    animation-iteration-count: infinite; 
+    animation-timing-function: ease-in-out;
+}
+table {
+    align-items: center;
+    width: 100%;
+    height: 550px;
+    border-collapse:  collapse;
+    animation-name: color-font;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.datos1 , .datos2 {
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    padding-left: 2rem;
+    animation-name: espacio;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+ .cuerpo{
+    font-family: sans-serif;
+     padding-left: 2rem;
+     padding-right: 2rem;
+ }
+
+ img{
+     animation-name: giroPro;
+     animation-duration: 2s;
+     animation-delay: 3s;
+     animation-iteration-count: infinite;
+     animation-timing-function: ease-in-out;
+ }
+
+ div{
+     background-color: wheat;
+     
+ }
