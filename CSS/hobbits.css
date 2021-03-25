@@ -1,49 +1,109 @@
+@keyframes animacion-espacial{
+    20% {transform: translateX(50%);}
+    80% {transform: translateX(-50%) ;}
+    
+}
+
 .container{
     display: -webkit-flex;
     display: flex;
     -webkit-box-flex: row wrap;
     flex-flow: row wrap;
 }
-.columna1,
-.columna2,
-.columna3,
-.columna4,
-.columna5 {
-    width: 100%;
-    border-color: solid black;
-}
 
-@media (min-width:600px){
-    .columna2,
-    .columna3,
-    .columna4,
-    .columna5{
-        width: 50%;
-    }
+main{
+    font-size: 1.2rem;
+    line-height: 1.4rem;
 }
-
-@media (min-width: 800px){
-    .columna1{ width: 60%; padding-left: 2rem; padding-top: 1rem;}
-    .columna2{ width: 40%; padding-top: 2rem;}
-    .columna3,
-    .columna4,
-    .columna5{
-        width: 33.3%;
-    }
-    .iframe{ padding-top: 2rem;}
-}
-
 .container{
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 85%;
+    max-width: 850px; 
+    padding-top: 9rem;
+    /* Mira chavito con este comando se centra el contenido, NO LO OLVIDES*/
+    margin: 0 auto;
 }
 
-h1{
-    font-family: sans-serif;
-    font-size: xx-large;
+.container iframe{
+    padding-left: 15vw;
 }
-text{
-    font-family: sans-serif;
-    font-size: 20px;
+
+header{
+    transition: 0.6s;
 }
+
+.container h1{
+transition: 0.5s;     /* Aquí*/
+}
+/*Animaciones
+    hover es una seudoclase*/
+
+.container h1:hover{
+    /*transition: 1s; El tiempo de trancision para que se vea suave rikolino, si
+    queremos que la transicion este al inicio y al final, entonces el comando se pone cuando el h1 esta
+    estatico*/
+    /*transform: scale(2); Recuerda el tema de escalas en dibujo técnico*/
+    transform: rotate(380deg);
+}
+
+header:hover{
+    
+    transform: translateY(-10rem);
+    /* display: none;  Con esto lo desaparece*/
+
+}
+
+header {
+    color: white;
+    background: rgb(189, 0, 88);
+    border-radius: 10%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    align-items: center;
+}
+
+header ul{
+    display: inline;
+}
+header ul li text {
+    font-family: sans-serif;
+    font-size:5vw;
+    padding-top: 1.5rem ;
+    float: left;
+    padding-left: 25vw;
+    padding-right: 2rem;
+    display: inline;
+    cursor: unset;
+    
+}
+header ul li iframe{
+    
+    width: 100px;
+    height:100px;
+    size: 2vw;
+    padding-top: 0;
+    display: inline;
+    
+}
+
+@media (max-width: 1222){
+    header ul{
+        align-items: center;
+        float: center;
+        padding:0;
+    }
+    header ul li{
+        float: center;
+        translate: center;
+        align-self: center;
+        font-family: sans-serif;
+        font-size: 70px;
+    }
+    header .gif{
+        float: center;
+        align-self: center;
+    }
+    
+}
+
