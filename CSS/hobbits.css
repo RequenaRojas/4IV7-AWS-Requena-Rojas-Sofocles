@@ -1,7 +1,21 @@
 @keyframes animacion-espacial{
-    20% {transform: translateX(50%);}
-    80% {transform: translateX(-50%) ;}
+    to{
+        transform: translateX(20) translateY(20);
+    }
+    from{
+        transform: translateZ(-40) translateY(-40);
+    }
     
+}
+
+@keyframes arcoiris{
+    to{
+        background-color: red;
+        color: blue;
+    }from{
+        background-color: blue;
+        color: red;
+    }
 }
 
 .container{
@@ -11,28 +25,54 @@
     flex-flow: row wrap;
 }
 
+body{
+    background-color: rgb(197, 177, 85);
+}
+
 main{
     font-size: 1.2rem;
     line-height: 1.4rem;
+    padding-top: 1.7rem;
 }
 .container{
     width: 85%;
     max-width: 850px; 
-    padding-top: 9rem;
+    padding-top:3rem;
     /* Mira chavito con este comando se centra el contenido, NO LO OLVIDES*/
     margin: 0 auto;
 }
 
-.container iframe{
-    padding-left: 15vw;
+main .UwU{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    padding-top: 2.5rem;
+    width: 7.5rem;
+    height: 5rem;
+    background-color: aquamarine;
+    border-radius: 50%;
+    transition: 1s;
+    margin: 0 auto;
 }
 
-header{
-    transition: 0.6s;
+main .UwU:hover{
+    animation-name: arcoiris;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.container iframe{
+    padding-left: 15vw;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
 }
 
 .container h1{
 transition: 0.5s;     /* Aquí*/
+padding-top: 2rem;
+margin: 0 auto;
+padding-bottom: 2rem;
 }
 /*Animaciones
     hover es una seudoclase*/
@@ -47,7 +87,7 @@ transition: 0.5s;     /* Aquí*/
 
 header:hover{
     
-    transform: translateY(-10rem);
+    transform: translateY(-50rem);
     /* display: none;  Con esto lo desaparece*/
 
 }
@@ -56,25 +96,31 @@ header {
     color: white;
     background: rgb(189, 0, 88);
     border-radius: 10%;
+    border-color: white ;
+    border: 0.5rem solid;
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
     align-items: center;
+    transition: 0.6s;
+    display: inline;
 }
 
 header ul{
     display: inline;
+    
 }
 header ul li text {
     font-family: sans-serif;
-    font-size:5vw;
+    font-size:4rem;
     padding-top: 1.5rem ;
     float: left;
-    padding-left: 25vw;
+    padding-left: 30vw;
     padding-right: 2rem;
     display: inline;
     cursor: unset;
+    
     
 }
 header ul li iframe{
@@ -87,23 +133,45 @@ header ul li iframe{
     
 }
 
-@media (max-width: 1222){
-    header ul{
-        align-items: center;
-        float: center;
-        padding:0;
-    }
-    header ul li{
+@media (max-width: 990px){
+    header ul li text{
         float: center;
         translate: center;
         align-self: center;
         font-family: sans-serif;
         font-size: 70px;
+        padding-left: 15vw;
     }
-    header .gif{
+    header iframe{
         float: center;
         align-self: center;
     }
     
+}
+
+@media (max-width: 550px){
+    .container iframe{
+        padding-left: 0.5rem;
+    }
+
+    .container p{
+        padding-top: 2rem;
+        
+    }
+    
+}
+
+@media (max-width: 591px){
+    header iframe{
+        padding-left: 30vw;
+    }
+    .container{
+        padding-top: 10rem;
+    }
+    
+    main{
+        padding-top: 5rem;
+    }
+
 }
 
