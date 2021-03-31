@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 1</title>
+    <link rel="stylesheet" href="./CSS/problema1.css">
+    <script src="./JS/problema1.js"></script>
+</head>
+<body>
+    <h1 style="font-size: 100px; text-align: center; border: black solid; border-radius: 2rem;">Problemas Pro</h1>
+    <h2 style="font-size: 50px; text-align: center;">Problemas Secuenciales</h2>
+    <p align="center">
+        Problema 1. 
+        <br>
+        <br>
+        Suponga que un individio desea invertir su capital en un banco y desea saber cuanto dinero
+        ganara después de un mes si el banco paga a razón de 2% mensual.
+    </p>
+    <form name="formulario" method="ge"
+     action="problema01.html">
+        <table align="center" border="1">
+            <tr>
+                <td class="td_up">Introduce la cantidad a invertir</td>
+                <td><input class="td_down" type="text" name="cantidad"
+                    onkeypress="return validarNum(event)"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input class="td_down" type="button" value="Interes"
+                        name="Enviar" onclick="interes()"></td>
+            </tr>
+            <tr>
+                <td class="td_up">Su sueldo total con interé del 2% mensual es de:</td>
+                <td><input class="td_down" type="text" name="Sueldoti"
+                    id="cantidadti" readonly="readonly"
+                    class="input_text"></td>
+            
+            </tr>
+            <tr>
+                <td></td>
+                <td><input class="td_down" type="button" name="borrard"
+                    value="Borrar" onclick="borrar()"></td>
+            </tr>
+            <br>
+            
+        </table>
+        <a href="file:///C:/Users/sofo9/OneDrive/Escritorio/4IV7-Requena-Rojas-Sofocles/index.html" style="align: left;">regresar...</a>
+        <br>
+        <a href="problema02.html" style="align: right;">siguiente ejercicio --></a>
+    </form>
+</body>
+</html>

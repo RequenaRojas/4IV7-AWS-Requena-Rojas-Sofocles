@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema2</title>
+    <link rel="stylesheet" href="CSS/problema02.css">
+    <script src="JS/problema02.js" ></script>
+</head>
+<body>
+    <h1>Problema 02</h1>
+    <p>Un vendedor recibe un sueldo base más un 10% extra por comisión de sus ventas,
+         el vendedor desea saber cuanto dinero obtendrá por concepto de comisiones por 
+         las tres ventas que realiza en el mes y el total que recibira en el mes tomando
+         en cuenta su sueldo base y comisiones.
+    </p>
+    <form name="formulario" method="ge"
+     action="problema01.html">
+        <table align="center" border="1">
+            <tr>
+                <td class="td_left">Tranquilo vendedor, solo dime tu sueldo base: </td>
+                <td class="td_right"><input type="text" name="sueldoBase"
+                    onkeypress="return validarNum(event)"></td>
+            </tr>
+            <tr>
+                <td class="td_left">¿Cuantas ventas tuviste en el mes?:</td>
+                <td class="td_right"d><input type="text" name="cantVentas"
+                     onkeypress="return validarNum(event)" value="3"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input class="td_down" type="button" value="Calcular"
+                        name="Enviar" onclick="operacion()"></td>
+            </tr>
+            <tr>
+                <td class="td_left">Ganancia de las Comisiones:</td>
+                <td class="td_right">Total a recibir:</td>
+            </tr>
+            <tr>
+                <td class="td_left"><input type="text" name="comisiones" onkeypress="return false"></td>
+                <td class="td_right"><input type="text" name="total" onkeypress="return false"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="button" value="Borrar"
+                        name="Borrar" onclick="borrar()"></td>
+            </tr>
+            <br>
+            
+        </table>
+        <br>
+        <a class="regresar" href="problema01.html">regresar...</a>
+        <br>
+        <br>
+        <a class="continuar" href="problema03.html" style="align: right;">siguiente ejercicio --></a>
+    </form>
+</body>
+</html>

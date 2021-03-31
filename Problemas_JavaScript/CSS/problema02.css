@@ -1,0 +1,21 @@
+body{
+    text-align: center;
+    background-color: burlywood;
+    
+}
+table{
+    border-collapse: collapse;
+    border-spacing: 2rem;
+    border: solid rgb(107, 12, 36);
+}
+.td_left{
+    background-color: brown;
+    color: coral;
+}
+
+.td_right{
+    background-color: coral;
+    color: brown;
+}
+
+
