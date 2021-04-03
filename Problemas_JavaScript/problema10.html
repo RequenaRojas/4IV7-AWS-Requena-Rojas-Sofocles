@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 10</title>
+    <link rel="stylesheet" href="CSS/problema10.css">
+    <script src="JS/problema10.js"></script>
+</head>
+<body>
+    <h1>Problema 10</h1>
+    <p>
+        Calcular la utilidad que un trabajador recibe en el reparto 
+        anual de utilidades si este se le asigna como un porcentaje de su salario mensual
+         que depende de su antiguedad en la empresa de acuerdo con la sig. Tabla:
+        <table align="center">
+            <td class="td_text1">
+                
+                Tiempo              
+                <br>
+                Menos de 1 año                     
+                <br>
+                1 año o más y menos de 2 años                
+                <br>
+                2 año o más y menos de 5 años                   
+                <br>
+                5 año o más y menos de 10 años 
+                <br>
+                10 años o más
+            </td>                  
+            <td class="td_text2">
+                Utilidad
+                <br>
+                5% de salario
+                <br>
+                7% del salario
+                <br>
+                10% del salario
+                <br>
+                15% del salario
+                <br>
+                20% de salario
+            </td>
+        </table>
+    </p>
+
+    <form name="formulario" method="ge"
+     action="problema10.html">
+        <table align="center" border="1">
+            <tr>
+
+                <td class="td_left" name="campo" colspan="2">Tranquilo mi pana, <br>Inserta tu sueldo base:</td>
+                
+                
+
+            </tr>
+            <tr>
+
+                <td class="td_right" colspan="2"><input type="text" name="sueldo"
+                    onkeypress="return validarNumFloat(event)">
+                </td> 
+                
+
+            </tr>
+            <tr>
+
+                <td class="td_left" name="campo" colspan="2">¿Cuantos años tienes en la empresa?</td>
+                
+                
+
+            </tr>
+            <tr>
+
+                <td class="td_right" colspan="2"><input type="text" name="años"
+                    onkeypress="return validarNumInt(event)">
+                </td> 
+                
+
+            </tr>
+            <tr>
+
+                <td colspan="2"><input class="td_down" type="button" value="Calcular"
+                name="Enviar" onclick="operacionPrincipal()"></td>
+
+            </tr>
+            <tr>
+
+                <td class="td_left" colspan="2" >
+                    <input type="text" name="resultado" onkeypress="return false">
+                </td>
+
+            </tr>
+           
+            <tr>
+
+                <td colspan="2"><input type="button" value="Borrar"
+                        name="Borrar" onclick="borrar()"></td>
+            
+            </tr>
+            <br>
+            
+        </table>
+        <br>
+        <a class="regresar" href="problema09.html"><-- Anterior ejercicio</a>
+        <br>
+        <br>
+        <a href="index.html" aria-setsize="10px">Menu</a>
+        <br>
+        <br>
+    </form>
+</body>
+</html>

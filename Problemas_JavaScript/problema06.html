@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 06</title>
+    <link rel="stylesheet" href="CSS/problema06.css">
+    <script src="JS/problema06.js"></script>
+</head>
+<body>
+    <h1>Problema 06</h1>
+    <p>Realizar un algoritmo que calcule la edad de una persona
+    </p>
+    <form name="formulario" method="ge"
+     action="problema06.html">
+        <table align="center" border="1">
+            <tr>
+                <td colspan="2">¿No sabes que edad tienes?,<br> solo dime tu feche de nacimiento</td>
+            </tr>
+            
+                <td class="td_right" colspan="2"><input type="date" name="fecha"
+                    onkeypress="">
+                </td> 
+            </tr>
+       
+            <tr>
+                <td colspan="2"><input class="td_down" type="button" value="Calcular"
+                name="Enviar" onclick="operacionPrincipal()"></td>
+
+            </tr>
+            <tr>
+                <td class="td_left" colspan="2" >
+                    <input type="text" name="años" onkeypress="return false">
+                </td>
+
+            </tr>
+           
+            <tr>
+                <td colspan="2"><input type="button" value="Borrar"
+                        name="Borrar" onclick="borrar()"></td>
+            </tr>
+            <br>
+            
+        </table>
+        <br>
+        <a class="regresar" href="problema05.html"><-- Anterior ejercicio</a>
+        <br>
+        <br>
+        <a href="index.html" aria-setsize="10px">Menu</a>
+        <br>
+        <br>
+        <a class="continuar" href="problema07.html" style="align: right;">Siguiente ejercicio --></a>
+    </form>
+</body>
+</html>

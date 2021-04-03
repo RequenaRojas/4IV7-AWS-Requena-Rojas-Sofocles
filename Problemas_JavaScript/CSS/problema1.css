@@ -1,3 +1,7 @@
+body{
+    text-align: center;    
+}
+
 .td_up{
     align-items: left;
     justify-content: left;

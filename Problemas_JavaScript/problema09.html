@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 09</title>
+    <link rel="stylesheet" href="CSS/problema09.css">
+    <script src="JS/problema09.js"></script>
+</head>
+<body>
+    <h1>Problema 09</h1>
+    <p>
+        Determinar la cantidad de dinero que recibirá un trabajador
+        por concepto de las horas extras trabajadas en una 
+        empresa, sabiendo que cuando las horas de trabajo exceden de 40,
+        el resto se consideran horas extras y que estas se pagan al doble de una hora normal cuando no 
+        exceden de 8, si las horas extras exceden de 8 se pagan las primeras 8 al
+        doble de lo que se pagan las horas normales y el resto al triple
+    </p>
+    <form name="formulario" method="ge"
+     action="problema09.html">
+        <table align="center" border="1">
+            <tr>
+
+                <td class="td_left" name="campo" colspan="2">Tranquilo mi pana, <br>Inserta la cantidad de horas:</td>
+                
+                
+
+            </tr>
+            <tr>
+
+                <td class="td_right" colspan="2"><input type="text" name="horas"
+                    onkeypress="return validarNum(event)">
+                </td> 
+                
+
+            </tr>
+            <tr>
+
+                <td class="td_left" name="campo" colspan="2">¿Cuanto te pagan la hora?</td>
+                
+                
+
+            </tr>
+            <tr>
+
+                <td class="td_right" colspan="2"><input type="text" name="precio"
+                    onkeypress="return validarNum(event)">
+                </td> 
+                
+
+            </tr>
+            <tr>
+
+                <td colspan="2"><input class="td_down" type="button" value="Ok"
+                name="Enviar" onclick="operacionPrincipal()"></td>
+
+            </tr>
+            <tr>
+
+                <td class="td_left" colspan="2" >
+                    <input type="text" name="resultado" onkeypress="return false">
+                </td>
+
+            </tr>
+           
+            <tr>
+
+                <td colspan="2"><input type="button" value="Borrar"
+                        name="Borrar" onclick="borrar()"></td>
+            
+            </tr>
+            <br>
+            
+        </table>
+        <br>
+        <a class="regresar" href="problema08.html"><-- Anterior ejercicio</a>
+        <br>
+        <br>
+        <a href="index.html" aria-setsize="10px">Menu</a>
+        <br>
+        <br>
+        <a class="continuar" href="problema10.html" style="align: right;">Siguiente ejercicio --></a>
+    </form>
+</body>
+</html>
