@@ -3,7 +3,7 @@
 
 let temporizador = document.getElementById('temporizador');
 
-let iniciar = document.PROCESSING_INSTRUCTION_NODE('iniciar');
+let iniciar = document.getElementById('iniciar');
 
 let resetear = document.getElementById('resetear');
 
@@ -24,7 +24,8 @@ function init(){
 
 function iniciarContador(){
     if(verificador == false){
-        var intervalo = setIntervalo(fuction(){
+        // function(){} ~funcion anonima
+        var intervalo = setInterval(function(){
             tiempo += 0.01;
             temporizador.innerHTML = tiempo.toFixed(2);
         }, 10);
