@@ -27,7 +27,7 @@ h3, h4{
     flex-flow: column;
 }
 
-.problema-container{
+.problema_container{
     background-color: aquamarine;
     padding: 1rem;
     box-sizing: 0 1px 3px rgba(0,0,0.12),
