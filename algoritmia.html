@@ -193,10 +193,11 @@
 
                 <input type="text" class="problema-input"
                 placeholder="Ingresa las palabras separadas por una coma"
+                onkeypress="return validarEntrada(event)"
                 id="p3-input">
 
                 <button type="button" class="problema-button"
-                style="margin-top: 1rem;" onclick="">Calcular</button>
+                style="margin-top: 1rem;" onclick="problema3()">Calcular</button>
 
                 <pre class="problema-output" id="p3-output">
                     Esperando respuesta...</pre>
