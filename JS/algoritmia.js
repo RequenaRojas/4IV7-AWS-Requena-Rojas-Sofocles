@@ -83,3 +83,101 @@ function problema2(){
 
 
 //Problema3
+
+function problema3(){
+    var p3_input = document.querySelector('#p3-input').value;
+
+    //verificamos si el input cumple con la siguiente expresión regular
+
+    var patron = /[QWERTYUIOPASDFGHJKLÑZXCVBNM,]/g;
+
+    
+    if(patron.test(p3_input) == false || /[^QWERTYUIOPASDFGHJKLÑZXCVBNM,]/g.test(p3_input) == true){
+        document.querySelector('#p3-output').textContent = "No escriba lo que no se le pedío (╯‵□′)╯︵┻━┻";
+    }
+    else{
+        //tenemos que detectar la coma, tendria que dividir 
+        //la cadena y colocarla dentro de un array
+
+        var p3_array = p3_input.split(','); // p3_input.split(',') ~una lista con los digitos separados por ,
+
+        var array_NumLetras = [];
+
+
+        p3_array.forEach(function (palabra, index){
+            var palabra_array = Array.from(palabra);
+            var letras_array = [];
+            
+            palabra_array.forEach(function (letra, index){
+                if(letras_array.includes(letra) == true){
+                    //No hará nada
+                }else{
+                    letras_array.push(letra);
+                    
+                }
+            });
+
+            array_NumLetras.push(letras_array.length);
+
+        });
+
+    
+
+        //Código Reutilizado del problema 8 OMG
+
+        
+        //El número más grande debera ser mayor (el tamaño de la lista - 1) veces si comparamos
+        //cada elemento de la misma lista con ese número.
+
+        var n = 0;
+        var m = 0;
+
+        array_NumLetras.forEach(function (num1, i){
+            n = 0;
+            m = 0;
+
+            for (let j = 0; j <= array_NumLetras.length; j++) {
+                
+                if(num1 > array_NumLetras[j]){
+                    n += 1;
+                }
+                if(num1 < array_NumLetras[j]){
+                    
+                }
+                if(num1 == array_NumLetras[j]){
+                    m += 1;
+                }
+                
+            }
+
+            //Caso deseado
+            if (n  ==  array_NumLetras.length - 1){
+                document.querySelector('#p3-output').textContent = p3_array[i];
+            }
+        
+            //Caso que todos sean iguales
+            if(m == array_NumLetras.length){
+                document.querySelector('#p3-output').textContent = "Todos son iguales OMG";
+            }
+
+
+        });
+
+        
+
+    }
+    
+}
+
+
+function validarEntrada(e){
+    var teclado = (document.all)?e.keyCode:e.which;
+    
+   if(teclado == 8)return true; 
+   var patron = /[QWERTYUIOPASDFGHJKLÑZXCVBNM,]/g;
+   var prueba = String.fromCharCode(teclado);
+
+   
+    return patron.test(prueba);
+}
+
