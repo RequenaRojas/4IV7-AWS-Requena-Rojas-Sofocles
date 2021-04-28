@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Registro 4IV7</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, 
+              initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/estilo.css">
+        <script src="JS/validar.js"></script>
+    </head>
+    <body>
+        <h1>Registros 4IV7</h1>
+        <br>
+        <br>
+        <h2 class="contenedorRegistro">Agregar un nuevo Registro</h2>
+        <br>
+        <div class="contenerdorRegistro" >
+            <form  onsubmit="return validar(this)" name="formulario" method="post"  
+                  action="Registro" >
+                <label>Nombre:</label>
+                <br>
+                <input type="text" name="nombre"  >
+                <br>
+                <label>Apellido Paterno:</label>
+                <br>
+                <input type="text" name="appat"  >
+                <br>
+                <label>Apellido Materno:</label>
+                <br>
+                <input type="text" name="appmat"  >
+                <br>
+                <label>Edad:</label>
+                <br>
+                <input type="number" name="edad" min="01" max="99" 
+                       size="2"  >
+                <br>
+                <label>Correo:</label>
+                <br>
+                <input type="email" name="email"  >
+                <br>
+                <br>
+                <input type="submit" value="Enviar Datos de Registro">
+                <br>
+                <br>
+                <input type="reset" value="Borrar Registro">
+            </form>
+        </div>
+        <div class="contenedorConsultar">
+            <br>
+            <form method="get" name="formularioconsultar" action="Consultar" class="Consultar">
+                <input type="submit" value="Consultar Tabla General de Usuarios" >
+            </form>
+        </div>
+        <br>
+        <h2>Elimninar un registro</h2>
+        <div class="contenerdorEliminar">
+            <br>
+            <form method="post" name="formularioeliminar" action="Eliminar" onsubmit="return validarNum(this)">
+                <label>Ingresa el ID del usuario que deseas eliminar: </label>
+                <input type="text" name="ideliminar" align="center">
+                <br>
+                <br>
+                <input type="submit" value="Eliminar Usuario" align="center">
+            </form>
+        </div>
+        <div class="links">
+            <br>
+            <a href="Modificar.html" class="link"> Modificar los datos de un Usuario</a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Modificar Registro</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/estilo.css">
+        <script src="JS/validar.js"></script>
+    </head>
+    <body>
+        <h1>Modificar Datos</h1>
+        <br>
+        <p>Ingresa el ID del usuario y escriba otra vez todos los campos</p>
+        <br>
+        <div class="contenedorConsultar">
+            <form method="post" name="formularioModificar" action="Modificar" onsubmit="return validarConID(this)">
+                <label>ID del Usuario:</label>
+                <br>
+                <input type='text' name='id'>
+
+                <br> 
+                <label>Nombre:</label>
+                <br>
+                <input type="text" name="nombre"  >
+
+                <br>
+                <label>Apellido Paterno:</label>
+                <br>
+                <input type="text" name="appat"  >
+
+                <br>
+                <label>Apellido Materno:</label>
+                <br>
+                <input type="text" name="appmat"  >
+
+                <br>
+                <label>Edad:</label>
+                <br>
+                <input type="number" name="edad" min="01" max="99" size="2">
+
+                <br>
+                <label>Correo:</label>
+                <br>
+                <input type="email" name="email">
+
+                <br>
+                <br>
+                <input type="submit" value="Modificar Datos de Registro">
+                <br>
+                <br>
+                <input type="reset" value="Borrar Registro">
+
+            </form>
+        </div>
+
+        <br>
+        <a href='index.html' class="link">Registrar Nuevo Usuario</a>
+        <br>
+        <a href='Consultar' class="link">Consultar Tabla General de Usuario</a>
+    </body>
+</html>

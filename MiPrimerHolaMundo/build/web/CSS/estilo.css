@@ -1,0 +1,135 @@
+*{
+    color: bisque;
+    background-color: #3c6f83;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+div{
+    padding: auto;
+    margin:0 auto;
+    
+    width: min-content;
+}
+h2{
+    
+    width: 20rem;
+    margin:0 auto;
+    text-align: center;
+}
+input, label{
+    background-color: #3c837d;
+}
+
+
+/*Los elementos en un cuadrado con bordes redondos*/
+h1{
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    background-color: #3c837d;
+    color: #c8d366;
+    place-items: center;
+    width: min-content;
+    padding: 1rem;
+    border: solid bisque;
+    border-radius: 2rem;
+}
+a{
+    border: solid bisque ;
+    margin:0 auto;
+    display: flex;
+    width:7rem;
+    text-align: center;
+    border-radius: 1.5rem;
+    padding:1rem;
+    background-color: #3c837d;
+}
+form{
+    border: solid bisque ;
+     margin:0 auto;
+     width: min-content;
+     border-radius: 1.5rem;
+     padding:1rem;
+     background-color: #3c837d;
+}
+/* Registro
+*/
+div.contenedorConsultar{
+    margin-top: 1rem;
+    margin-left: 50rem;
+    margin-bottom: 1rem;
+    margin-right: 5rem;
+    
+}
+
+/* Respuesta del Registro
+*/
+div.contenedorDatos{
+    display: flex;
+    justify-content: space-around;
+}
+div.datos1{
+    margin: 1rem;
+    margin-left: 20rem;
+    display: flex;
+    background-color: #3c837d;
+    place-items: center;
+    padding: 2rem;
+    border: solid bisque;
+    border-radius: 2rem;
+    align-items: center;
+
+    
+
+    float: left;
+    text-align: center;
+    height: 200px;
+    width: 10rem;
+}
+div.datos2{
+    margin: 1rem;
+    display: flex;
+    text-align: center;
+    background-color: #3c837d;
+    place-items: center;
+    padding: 2rem;
+    border: solid bisque;
+    border-radius: 2rem;
+    align-items: center;
+
+    float: left;
+    text-align: center;
+    height: 200px;
+    width: 10rem;
+}
+/* En Consulta
+*/
+table{
+    width: 50rem;
+}
+th,td{
+    text-align: center;
+    background-color: #3c837d;
+    border-color: #3c837d;
+}
+
+/*Modificar
+*/
+
+p{
+    margin: 0 auto;
+    text-align: center;
+    width: 16rem;
+}
+div.contenedorConsultar{
+    display: flex;
+    justify-content: space-around;
+    float: left;
+    text-align: center;
+    margin-left: 37.5vw;
+}
+
+
+
+
+
